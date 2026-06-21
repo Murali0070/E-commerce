@@ -1,7 +1,7 @@
 ﻿import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
-import nikeImage from "../Assets1/nikeImage.png";
+import nikeImage from "../assets1/nikeImage.png";
 function APIShoesCard({ shoe }) {
     const { addToCart } = useContext(CartContext);
     const navigate = useNavigate();
