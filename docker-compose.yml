@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./e-commerce
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    container_name: e-commerce-app
+    restart: unless-stopped
